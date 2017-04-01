@@ -18,6 +18,7 @@
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
+        window.alert("soooo");
         $('.navbar-toggle:visible').click();
     });
 
@@ -28,4 +29,10 @@
         }
     })
 
+    $(document).ready(function() {
+        $('#SignUpForm').submit(function(e) {
+            $('#confirmDiv').show();
+            e.preventDefault() 
+        });
+    });
 })(jQuery); // End of use strict
