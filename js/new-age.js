@@ -31,7 +31,6 @@
     $(document).ready(function() {
         $('#SignUpForm').submit(function(e) {
             $('#confirmDiv').show();
-            e.preventDefault();
         });
     })
 
